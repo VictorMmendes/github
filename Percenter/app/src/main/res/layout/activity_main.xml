@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.percenter.victor.percenter.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:layout_x="25dp"
+        android:layout_y="28dp"
+        android:background="@color/colorPrimarySweetBlue"
+        android:ems="10"
+        android:hint="   Valor R$ 00.00"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:id="@+id/percentLb"
+        android:layout_width="54dp"
+        android:layout_height="19dp"
+        android:layout_x="27dp"
+        android:layout_y="102dp"
+        android:text="0%"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/percentBar"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/gorjetaLb"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_x="27dp"
+        android:layout_y="134dp"
+        android:text="Gorjeta"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <TextView
+        android:id="@+id/totalLb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="51dp"
+        android:layout_y="171dp"
+        android:text="Total"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <SeekBar
+        android:id="@+id/percentBar"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_x="100dp"
+        android:layout_y="102dp"
+        android:max="30"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/totalBar"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_x="98dp"
+        android:layout_y="173dp"
+        android:background="@color/colorPrimaryYellow"
+        android:text="R$00.00"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <TextView
+        android:id="@+id/gorjetaBar"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_x="98dp"
+        android:layout_y="135dp"
+        android:background="@color/colorPrimaryYellow"
+        android:inputType="numberDecimal"
+        android:text="R$00.00"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+</AbsoluteLayout>
